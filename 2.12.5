@@ -1,0 +1,19 @@
+speed(5)
+penup()
+def square():
+    for i in range(4):
+        pendown()
+        forward(square_length)
+        left(90)
+        penup()
+
+def next_square():
+    forward(400 - square_length)
+    left(90)
+
+setposition(-200,-200)
+square_length = int(input("What will the length of the squares be?: "))
+
+for i in range(4):
+    square()
+    next_square()
