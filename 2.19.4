@@ -1,0 +1,56 @@
+speed(5)
+
+def check():
+    pendown()
+    clear()
+    pensize(10)
+    color("green")
+    right(45)
+    backward(20)
+    forward(20)
+    left(90)
+    forward(60)
+    
+def up_arrow():
+    pendown()
+    clear()
+    pensize(10)
+    color("chartreuse")
+    left(90)
+    forward(50)
+    left(45)
+    backward(20)
+    forward(20)
+    right(90)
+    backward(20)
+    
+def down_arrow():
+    pendown()
+    clear()
+    pensize(10)
+    color("crimson")
+    right(90)
+    forward(50)
+    left(45)
+    backward(20)
+    forward(20)
+    right(90)
+    backward(20)
+    
+secret_number = 7
+user_number = int(input("Guess a number, from 1-10: "))
+while user_number != secret_number:
+    if user_number == secret_number:
+        check()
+    elif user_number < secret_number:
+        up_arrow()
+        penup()
+        setposition(0,0)
+        right(45)
+        user_number = int(input("Guess a number, from 1-10: "))
+    elif user_number > secret_number:
+        down_arrow()
+        penup()
+        setposition(0,0)
+        left(135)
+        user_number = int(input("Guess a number, from 1-10: "))
