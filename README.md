@@ -1,5 +1,5 @@
 # Python
-# Use the branch dropdown menu to access different CodeHS Courses.
+# Use the branch dropdown menu to access different CodeHS Python Units.
 # If you would rather use links, see below.
 # -------
 # Turtle Graphics Introduction
