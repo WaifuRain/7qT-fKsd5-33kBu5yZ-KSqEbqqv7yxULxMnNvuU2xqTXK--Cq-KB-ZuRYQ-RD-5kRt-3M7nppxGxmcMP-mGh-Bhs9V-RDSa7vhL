@@ -1,0 +1,36 @@
+speed(5)
+
+def draw_x():
+    pensize(5)
+    color("red")
+    left(45)
+    forward(20)
+    backward(40)
+    forward(20)
+    left(90)
+    forward(20)
+    backward(40)
+    
+def draw_line():
+    pensize(5)
+    color("yellow")
+    forward(20)
+    backward(40)
+    
+def draw_check():
+    pensize(5)
+    color("Chartreuse")
+    right(135)
+    backward(60)
+    forward(60)
+    left(90)
+    backward(20)
+    
+rating = int(input("Rate from 1-10: "))
+
+if rating < 5:
+    draw_x()
+elif rating > 8:
+    draw_check()
+else:
+    draw_line()
