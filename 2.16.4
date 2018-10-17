@@ -1,0 +1,32 @@
+speed(5)
+
+def face():
+    color("yellow")
+    begin_fill()
+    circle(75)
+    end_fill()
+    penup()
+    right(90)
+    setposition(-50, 70)
+    pensize(5)
+    color("black")
+    pendown()
+    circle(50,180)
+    penup()
+    setposition(-25, 100)
+    pendown()
+    begin_fill()
+    circle(5)
+    end_fill()
+    penup()
+    setposition(25, 100)
+    pendown()
+    begin_fill()
+    circle(5)
+    end_fill()
+    penup()
+    
+happy = input("How are you feeling?: ")
+
+if happy == ("happy"):
+    face()
