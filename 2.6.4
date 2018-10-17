@@ -1,0 +1,24 @@
+"""
+This program will draw a pyramid of 6 circles on top of one another.
+"""
+speed(5) #Sets the speed to Medium (5/10)
+
+#These lines of code draw the circle at the top of the pyramid, then moves to the bottom row at (-100,-200) without leaving a trail.
+circle(50)
+penup()
+setposition(-100,-200)
+
+#This Loop draws the bottom row of circles.
+for i in range(3):
+    pendown()
+    circle(50)
+    penup()
+    forward(100)
+setposition(-50,-100) #Sets position to the middle row of circles at (-50,-100).
+
+#This loop draws the middle row of circles.
+for i in range(2):
+    pendown()
+    circle(50)
+    penup()
+    forward(100)
