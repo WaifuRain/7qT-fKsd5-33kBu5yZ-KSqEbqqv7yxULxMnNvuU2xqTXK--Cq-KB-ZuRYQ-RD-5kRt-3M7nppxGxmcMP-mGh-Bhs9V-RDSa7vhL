@@ -1,0 +1,13 @@
+speed(0)
+penup()
+
+def draw_36_beads_counterclockwise():
+    for i in range(36):
+        forward(100)
+        pendown()
+        circle(10)
+        penup()
+        backward(100)
+        left(10)
+
+draw_36_beads_counterclockwise()
