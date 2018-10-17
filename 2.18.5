@@ -1,0 +1,18 @@
+speed(5)
+
+def check():
+    pensize(10)
+    color("green")
+    right(45)
+    backward(20)
+    forward(20)
+    left(90)
+    forward(60)
+    
+secret_number = 7
+user_number = int(input("Guess a number, from 1-10: "))
+
+if user_number == secret_number:
+    check()
+else:
+    print("Guess again.")
