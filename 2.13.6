@@ -1,0 +1,23 @@
+speed(5)
+penup()
+setposition(0,-200)
+
+def make_circle(radius):
+    pendown()
+    color("gray")
+    begin_fill()
+    circle(radius)
+    end_fill()
+
+def move_up():
+    penup()
+    left(90)
+    forward(radius_choice * 2)
+    right(90)
+
+radius_choice = int(input("What will the size of the snowballs be?: "))
+
+for i in range(3):
+    make_circle(radius_choice)
+    move_up()
+    radius_choice = radius_choice / 2
