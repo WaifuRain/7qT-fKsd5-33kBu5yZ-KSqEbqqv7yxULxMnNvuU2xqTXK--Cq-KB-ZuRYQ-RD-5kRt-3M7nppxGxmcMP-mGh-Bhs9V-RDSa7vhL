@@ -1,0 +1,16 @@
+speed(0)
+def square():
+    for i in range(4):
+        pendown()
+        forward(50)
+        left(90)
+    penup()
+    forward(50)
+    
+
+penup()  
+setposition(-200,-200)
+for i in range(4):
+    for i in range(8):
+        square()
+    left(90)
