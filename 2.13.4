@@ -1,0 +1,18 @@
+speed(5)
+penup()
+setposition(-150,0)
+
+def make_circle(color_choice):
+    pendown()
+    color(color_choice)
+    begin_fill()
+    circle(20)
+    end_fill()
+    penup()
+    forward(40)
+
+for i in range(2):
+    make_circle("teal")
+    make_circle("chartreuse")
+    make_circle("gold")
+    make_circle("crimson")
