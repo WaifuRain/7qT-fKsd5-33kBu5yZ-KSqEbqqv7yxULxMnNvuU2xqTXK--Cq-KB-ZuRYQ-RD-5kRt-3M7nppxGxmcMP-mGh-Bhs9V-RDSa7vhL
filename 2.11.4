@@ -1,0 +1,17 @@
+speed(5)
+penup()
+cr = 25 #circle radius
+
+def drawcircle():
+    pendown()
+    circle(cr)
+    penup()
+
+for i in range(4):
+    pendown()
+    drawcircle()
+    cr = cr + 25
+    penup()
+    right(90)
+    forward(25)
+    left(90)
