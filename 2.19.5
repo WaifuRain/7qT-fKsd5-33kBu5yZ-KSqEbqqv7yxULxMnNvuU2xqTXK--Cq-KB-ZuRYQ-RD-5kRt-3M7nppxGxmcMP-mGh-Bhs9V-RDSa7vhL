@@ -1,0 +1,22 @@
+speed(0)
+radius=25
+height=0
+def draw_circle():
+    pendown()
+    circle(25)
+    penup()
+    forward(50)
+def make_row():
+    penup()
+    setposition(-(user_choice*25),-200 + height)
+    for i in range(user_choice):
+        draw_circle()
+user_choice=int(input("How many circles on the bottom row?(max 8): "))
+row_value=user_choice
+penup()
+while row_value > 0:
+    penup()
+    make_row()
+    height=height+50
+    row_value=user_choice - 1
+    user_choice=user_choice - 1
