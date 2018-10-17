@@ -1,0 +1,38 @@
+speed(0)
+penup()
+
+def square_loop():
+    for i in range(4):
+        pendown()
+        forward(50)
+        left(90)
+        penup()
+
+def draw_squares():
+    setposition(-25, -200)
+    square_loop()
+    setposition(-25, -100)
+    square_loop()
+    setposition(-25, 0)
+    square_loop()
+    setposition(-25, 100)
+    square_loop()
+    
+def draw_circle():
+    pendown()
+    circle(25)
+    penup()
+    
+def draw_circles():
+    setposition(0, -150)
+    draw_circle()
+    setposition(0, -50)
+    draw_circle()
+    setposition(0, 50)
+    draw_circle()
+    setposition(0, 150)
+    draw_circle()
+
+
+draw_squares()
+draw_circles()
