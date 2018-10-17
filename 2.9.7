@@ -1,0 +1,47 @@
+speed(5)
+penup()
+
+def red_square():
+    pendown()
+    color("red")
+    begin_fill()
+    circle(60,360,4)
+    end_fill()
+    penup()
+    
+def blue_circle():
+    pendown()
+    color("blue")
+    begin_fill()
+    circle(60)
+    end_fill()
+    penup()
+    
+def yellow_semicircle():
+    pendown()
+    color("yellow")
+    begin_fill()
+    circle(60,180)
+    end_fill()
+    penup()
+    
+def green_pentagon():
+    pendown()
+    color("green")
+    begin_fill()
+    circle(60,360,5)
+    end_fill()
+    penup()
+
+
+setposition(-110, 50)
+red_square()
+
+setposition(110, 50)
+blue_circle()
+
+setposition(-110, -100)
+yellow_semicircle()
+
+setposition(110, -40)
+green_pentagon()
