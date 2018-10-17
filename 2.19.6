@@ -1,0 +1,48 @@
+speed(0)
+
+def square(color_choice):
+    for i in range(4):
+        color(color_choice)
+        pendown()
+        forward(40)
+        left(90)
+    penup()
+    forward(40)
+
+def red_row():
+    for i in range(5):
+        begin_fill()
+        square("red")
+        end_fill()
+        begin_fill()
+        square("black")
+        end_fill()
+    penup()
+    setposition(-200, height)
+
+def black_row():
+    for i in range(5):
+        begin_fill()
+        square("black")
+        end_fill()
+        begin_fill()
+        square("red")
+        end_fill()
+    penup()
+    setposition(-200, height)
+
+row_count = 0
+height = -160
+
+penup()
+setposition(-200, -200)
+
+while row_count < 10:
+    if row_count % 2 == 1:
+        red_row()
+        height = height + 40
+        row_count = row_count + 1
+    elif row_count % 2 == 0:
+        black_row()
+        height = height + 40
+        row_count = row_count + 1
