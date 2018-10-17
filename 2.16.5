@@ -1,0 +1,28 @@
+speed(5)
+penup()
+setposition(-100,0)
+def black_square():
+    pendown()
+    begin_fill()
+    for i in range(4):
+        forward(20)
+        left(90)
+    end_fill()
+    penup()
+    forward(30)
+
+def square():
+    pendown()
+    for i in range(4):
+        forward(20)
+        left(90)
+    penup()
+    forward(30)
+
+count = 0
+
+for i in range(3):
+    black_square()
+    if count % 2 == 0:
+        square()
+    count = count + 2
