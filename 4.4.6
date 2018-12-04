@@ -1,0 +1,19 @@
+age = int(input("Age: "))
+born_in_us = input("Born in the U.S.? (Yes/No): ")
+residency = int(input("Years of residency: "))
+if (age >= 35 and residency >= 14 and born_in_us == "Yes"):
+    print("You are eligible to run for president!")
+elif (age < 35):
+    print("You are not eligible to run for president.")
+elif (residency < 14):
+    print("You are not eligible to run for president.")
+elif (born_in_us == "No"):
+    print("You are not eligible to run for president.")
+if (age < 35):
+    print("You are too young. You must be at least 35 years old.")
+if (residency < 14):
+    print("You have not been a resident for long enough.")
+if (born_in_us == "No"):
+    print("You must be born in the U.S. to run for president.")
+else:
+    print("You are not eligible to run for president.")
