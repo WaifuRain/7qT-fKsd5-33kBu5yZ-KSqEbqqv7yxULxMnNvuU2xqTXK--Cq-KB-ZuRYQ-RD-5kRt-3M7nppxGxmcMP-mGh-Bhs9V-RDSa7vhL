@@ -1,0 +1,17 @@
+initial_amount = 1000
+choice = input("Would you like to make a deposit or a withdrawl?: ")
+if (choice == "deposit"):
+    print("Balance: " + str(initial_amount))
+    amount = (int(input("How much money would you like to deposit?: ")))
+    new_amount = (initial_amount + amount)
+    print("Your new balance is: " + str(new_amount))
+elif (choice == "withdrawal"):
+    print("Balance: " + str(initial_amount))
+    amount = (int(input("How much money would you like to withdrawal?: ")))
+    if (amount > 1000):
+        print("You cannot have a negative balance!")
+    else:
+        new_amount = (initial_amount - amount)
+        print("Your new balance is: " + str(new_amount))
+else:
+    print("Invalid transaction.")
