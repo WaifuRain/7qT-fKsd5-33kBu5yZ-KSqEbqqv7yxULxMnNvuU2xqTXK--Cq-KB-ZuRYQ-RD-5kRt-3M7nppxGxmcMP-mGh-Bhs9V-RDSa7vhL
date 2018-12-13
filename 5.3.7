@@ -1,0 +1,12 @@
+magic_number = 3
+guess = ""
+
+while True:
+    guess = int(input("Guess the number:"))
+    if (guess == magic_number):
+        print("Correct!")
+        break
+    elif (guess < magic_number):
+        print("Too Low!")
+    else:
+        print("Too High!")
