@@ -7,3 +7,9 @@ https://github.com/WaifuRain/Python/tree/INTRODUCTION-TO-PROGRAMMING-WITH-TURTLE
 # ------- 
 # Basic Python and Console Interaction
 https://github.com/WaifuRain/Python/tree/BASIC-PYTHON-AND-CONSOLE-INTERACTION
+# -------
+# Conditionals
+https://github.com/WaifuRain/Python/tree/CONDITIONALS
+# -------
+# Looping
+https://github.com/WaifuRain/Python/tree/LOOPING
