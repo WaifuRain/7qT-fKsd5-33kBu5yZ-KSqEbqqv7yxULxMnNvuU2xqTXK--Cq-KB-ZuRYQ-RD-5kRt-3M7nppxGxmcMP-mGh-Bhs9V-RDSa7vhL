@@ -1,0 +1,10 @@
+def replace_at_index(word, index, letter):
+    return word[:index] + letter + word[index + 1:]
+    
+word = input("Enter a word or phrase: ")
+try:
+    index = int(input("Enter an index value: "))
+except ValueError:
+    print("You didn't enter a number!")
+letter = input("Enter the new letter: ")
+print replace_at_index(word, index, letter)
