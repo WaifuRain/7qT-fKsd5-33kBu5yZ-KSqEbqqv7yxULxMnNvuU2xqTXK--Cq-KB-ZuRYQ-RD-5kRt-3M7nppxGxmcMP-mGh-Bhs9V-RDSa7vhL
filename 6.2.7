@@ -1,0 +1,20 @@
+def multiply():
+    a = first_num * second_num
+    print(str(first_num) + " " + "*" + " " + str(second_num) + " " + "=" + " " + str(a))
+def add():
+    a = first_num + second_num
+    print(str(first_num) + " " + "+" + " " + str(second_num) + " " + "=" + " " + str(a))
+def subtract():
+    a = first_num - second_num
+    print(str(first_num) + " " + "-" + " " + str(second_num) + " " + "=" + " " + str(a))
+first_num = int(input("What is the first number?: "))
+second_num = int(input("What is the second number?: "))
+operation = input("Choose an operation (add, subtract, multiply): ")
+if (operation == "multiply"):
+    multiply()
+elif (operation == "add"):
+    add()
+elif (operation == "subtract"):
+    subtract()
+else:
+    print("Invalid operation!")
