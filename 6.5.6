@@ -1,0 +1,16 @@
+def C_to_F(C):
+    return (1.8 * C) + 32
+def F_to_C(F):
+    return (F - 32) / 1.8
+try:
+    choice = input("Convert to C or F?: ")
+except ValueError:
+    print("Error")
+try:
+    num = int(input("Enter a number: "))
+except ValueError:
+    print("Error")
+if choice == "C":
+    C_to_F(num)
+elif choice == "F":
+    F_to_C(num)
