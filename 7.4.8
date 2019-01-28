@@ -1,0 +1,9 @@
+def count_occurrences(string1, string2):
+    count = 0
+    for i in string1:
+        if i == string2:
+            count = count + 1
+    return count
+string1 = input("Enter a string: ")
+string2 = input("Enter a letter: ")
+print (count_occurrences(string1, string2))
