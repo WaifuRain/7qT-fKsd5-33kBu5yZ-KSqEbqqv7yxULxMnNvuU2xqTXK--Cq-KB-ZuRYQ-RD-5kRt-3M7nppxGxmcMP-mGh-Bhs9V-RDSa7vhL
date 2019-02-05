@@ -1,0 +1,11 @@
+def remove_all_from_string(string, args):
+    if len(args) == 0:
+        return string
+    index = string.find(args)
+    while index != -1:
+        string = string[:index] + string[index + len(args):]
+        index = string.find(args)
+    return str(string)
+    
+    
+print remove_all_from_string("bananas", "na")
