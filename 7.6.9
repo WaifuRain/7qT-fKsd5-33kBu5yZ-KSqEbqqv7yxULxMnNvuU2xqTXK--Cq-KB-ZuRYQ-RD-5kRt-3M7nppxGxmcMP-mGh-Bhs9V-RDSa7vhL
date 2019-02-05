@@ -1,0 +1,12 @@
+def remove_all_from_string(string, args):
+    originalstring = string
+    #newstring = ""
+    while True:
+        index = originalstring.find(args)
+        originalstring = originalstring[:index] + originalstring[index+1:]
+        if originalstring.find(args) == -1:
+            return str(originalstring)
+            break
+        else:
+            continue
+print remove_all_from_string("hello", "l")
