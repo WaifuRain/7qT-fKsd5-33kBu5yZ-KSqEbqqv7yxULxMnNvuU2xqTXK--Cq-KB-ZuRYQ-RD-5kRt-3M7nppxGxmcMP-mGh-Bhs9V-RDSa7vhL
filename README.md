@@ -13,3 +13,6 @@ https://github.com/WaifuRain/Python/tree/CONDITIONALS
 # -------
 # Looping
 https://github.com/WaifuRain/Python/tree/LOOPING
+# -------
+# Strings
+https://github.com/WaifuRain/Python/tree/STRINGS
