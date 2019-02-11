@@ -1,1 +1,13 @@
-
+import math
+def square(num):
+    return pow(num,2)
+def distance(point1, point2): #Pythagorean Theorum
+    diffY = point2[1] - point1[1] #difference between Y coordinates
+    diffX = point2[0] - point1[0] #difference between X coordinates
+    SqY = square(diffY) #Calculate Y^2
+    SqX = square(diffX) #Calculate X^2
+    Csquared = SqY + SqX #a^2 + b^2 = c^2
+    result = math.sqrt(Csquared) #square root of C^2
+    return result
+# This should print 5.0
+print distance((1, 1), (4, 5))
