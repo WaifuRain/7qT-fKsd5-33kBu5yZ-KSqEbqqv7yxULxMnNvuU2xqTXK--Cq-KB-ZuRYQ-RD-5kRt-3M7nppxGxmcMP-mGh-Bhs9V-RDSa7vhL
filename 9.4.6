@@ -1,0 +1,9 @@
+uniques = {}
+text = input("Text: > ")
+text = text.split()
+for word in text:
+    if word not in uniques:
+        uniques[word] = 1
+    else:
+        uniques[word] += 1
+print(uniques)
