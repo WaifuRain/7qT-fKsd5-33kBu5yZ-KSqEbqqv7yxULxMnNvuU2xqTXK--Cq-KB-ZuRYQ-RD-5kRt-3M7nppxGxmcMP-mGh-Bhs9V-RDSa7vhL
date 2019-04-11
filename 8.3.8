@@ -1,0 +1,20 @@
+def get_index(current_string):
+    index = 0
+    while index != -1:
+        index = int(input("Enter an index (-1 to quit): "))
+        if index == -1:
+            return -1
+        elif (index > len(current_string) - 1 or index < -1):
+            print("Invalid Index")
+        else:
+            return index
+def get_letter():
+    flag = 0
+    while flag != -1:
+        output = input("Enter a letter: ")
+        if len(output) != 1:
+            print("Must be exactly one character!")
+        elif output == output.upper():
+            print("Character must be a lowercase letter!")
+        else:
+            return output
