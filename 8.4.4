@@ -1,0 +1,11 @@
+num_names = int(input("Number of names: "))
+names = []
+for i in range(num_names):
+    names.append(input("Name: "))
+first_name = names[0]
+last_name = names[-1]
+middle_name = names[1:-1]
+print('')
+print("First name: " + first_name)
+print("Middle name(s): " + str(middle_name))
+print("Last name: " + last_name)
