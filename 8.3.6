@@ -1,0 +1,11 @@
+text = input("Enter some text: ")
+text_list = text.split()
+owl_count = 0
+for word in text_list:
+    word.lower()
+    if word.find('owl') != -1:
+        owl_count += 1
+if owl_count == 0:
+    print('There were no instances of \"owl\".')
+else:
+    print('There were ' + str(owl_count) + ' instances of \"owl\".')
