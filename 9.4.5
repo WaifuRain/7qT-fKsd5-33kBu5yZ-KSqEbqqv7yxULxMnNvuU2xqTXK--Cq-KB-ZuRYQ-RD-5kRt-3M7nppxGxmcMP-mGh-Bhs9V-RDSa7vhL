@@ -1,0 +1,11 @@
+phone_book = {}
+while True:
+    name = input("Name: > ")
+    if name == "":
+        break
+    elif name in phone_book:
+        print("Phone number: " + str(phone_book[name]))
+    else:
+        new_num = input("Enter a new phone number for " + name + ": > ")
+        phone_book[name] = new_num
+print(phone_book)
