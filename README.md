@@ -19,3 +19,11 @@ https://github.com/WaifuRain/Python/tree/STRINGS
 # -------
 # Creating and Altering Data Structures
 https://github.com/WaifuRain/Python/tree/CREATING-AND-ALTERING-DATA-STRUCTURES
+# -------
+# Extending Data Structures
+https://github.com/WaifuRain/Python/tree/EXTENDING-DATA-STRUCTURES
+# -------
+# Project: Hangman
+https:///
+
+# -- End of Course --
