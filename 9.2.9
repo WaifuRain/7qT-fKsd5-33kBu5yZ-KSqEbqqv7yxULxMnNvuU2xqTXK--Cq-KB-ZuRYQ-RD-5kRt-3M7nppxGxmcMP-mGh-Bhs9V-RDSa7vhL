@@ -1,0 +1,8 @@
+def safe_int(item):
+    try:
+        return int(item)
+    except:
+        return 0
+    
+list_of_strings = ["a", "2", "7", "zebra"]
+print [safe_int(x) for x in list_of_strings]
