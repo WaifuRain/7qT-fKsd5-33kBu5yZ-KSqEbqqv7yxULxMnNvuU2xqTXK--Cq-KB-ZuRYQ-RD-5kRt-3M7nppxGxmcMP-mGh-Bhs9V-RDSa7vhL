@@ -1,0 +1,9 @@
+name_list = []
+last_name_list = []
+for i in range(5):
+    name = input("Name: ")
+    name_list.append(name)
+for last in name_list:
+    last = last_name_list.append(last.split(' ')[-1])
+    last_name_list.sort()
+print(last_name_list)
