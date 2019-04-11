@@ -1,0 +1,18 @@
+text = input("Enter some text: ")
+text_list = list(text)
+owl_count = 0
+indicies = []
+for item in text_list:
+    if item == ('!'):
+        text_list.remove('!')
+    elif item == ('.'):
+        text_list.remove('.')
+text_list = ''.join(text_list)
+text_list = text_list.split(' ')
+for index, word in enumerate(text_list):
+    word = word.lower()
+    if word.find('owl') != -1:
+        owl_count += 1
+        indicies.append(index)
+print("There were " + str(owl_count) + " words that contained \"owl\".")
+print("They occured at indicies " + str(indicies))
