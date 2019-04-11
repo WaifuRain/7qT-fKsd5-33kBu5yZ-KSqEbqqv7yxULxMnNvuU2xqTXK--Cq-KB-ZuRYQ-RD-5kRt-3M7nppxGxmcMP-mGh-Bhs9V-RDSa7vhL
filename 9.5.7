@@ -1,0 +1,11 @@
+def update_counts(count_dictionary, word):
+    if word not in count_dictionary:
+        count_dictionary[word] = 1
+    else:
+        count_dictionary[word] += 1
+uniques = {}
+text = input("Text: > ")
+text = text.split()
+for word in text:
+    update_counts(uniques, word)
+print(uniques)
