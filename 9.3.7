@@ -1,0 +1,19 @@
+requirement = []
+def get_tuple():
+    x,y = [int(input("Enter number: ")) for x in range(2)]
+    output = (x, y)
+    return output
+def print_slopes(args):
+    for i in range(4):
+        current_pair = args[i]
+        next_pair = args[i + 1]
+        x1, y1 = current_pair
+        x2, y2 = next_pair
+        print(current_pair)
+        print(x1)
+        print(y1)
+        slope = (float(y2) - y1) / (x2 - x1)
+        slope = float(slope)
+        print("Slope between " + str(current_pair) + " and " + str(next_pair) + ": " + str(slope))
+coord_list = [get_tuple() for x in range(5)]
+print_slopes(coord_list)
